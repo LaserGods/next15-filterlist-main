@@ -1,7 +1,7 @@
 import 'server-only';
 
 import { cacheLife } from 'next/dist/server/use-cache/cache-life';
-import { prisma } from '@/db';
+import prisma from '@/db';
 import { slow } from '@/utils/slow';
 
 export async function getProject() {

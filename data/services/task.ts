@@ -1,7 +1,7 @@
 import 'server-only';
 
 import { connection } from 'next/server';
-import { prisma } from '@/db';
+import prisma from '@/db';
 import type { TaskStatus, TaskSummary } from '@/types/task';
 import { slow } from '@/utils/slow';
 import { getCategoriesMap } from './category';
